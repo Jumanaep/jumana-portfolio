@@ -1,24 +1,56 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { AuroraBackdrop, CursorGlow } from "@/components/site/primitives";
+import { Loader } from "@/components/site/Loader";
+import { Navbar, ScrollProgress } from "@/components/site/Navbar";
+import { Hero } from "@/components/site/Hero";
+import { About } from "@/components/site/About";
+import { Skills } from "@/components/site/Skills";
+import { Experience } from "@/components/site/Experience";
+import { LiveProjects } from "@/components/site/LiveProjects";
+import { Projects } from "@/components/site/Projects";
+import { Contact } from "@/components/site/Contact";
+import { Footer } from "@/components/site/Footer";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Jumana Fathima EP — Software QA Engineer Portfolio" },
+      {
+        name: "description",
+        content:
+          "Portfolio of Jumana Fathima EP, Software QA Engineer skilled in manual and automation testing with Selenium, Playwright, Postman and Jira.",
+      },
+      { property: "og:title", content: "Jumana Fathima EP — Software QA Engineer" },
+      {
+        property: "og:description",
+        content:
+          "Manual and automation QA engineer: Selenium WebDriver, Playwright, API testing, 500+ bugs reported across 4 live client products.",
+      },
+      { property: "og:type", content: "profile" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <Loader />
+      <AuroraBackdrop />
+      <CursorGlow />
+      <ScrollProgress />
+      <Navbar />
+      <main className="relative">
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <LiveProjects />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
+    </>
   );
 }
