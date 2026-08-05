@@ -16,13 +16,14 @@ export function Contact() {
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const form = e.currentTarget;
     setSending(true);
     setTimeout(() => {
       setSending(false);
       toast.success("Message ready to send", {
         description: `Reach me directly at ${CONTACT.email} — I reply within a day.`,
       });
-      e.currentTarget?.reset?.();
+      form.reset();
     }, 900);
   };
 
