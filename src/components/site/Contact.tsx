@@ -89,10 +89,10 @@ export function Contact() {
         lead="Available for QA Engineer roles and contract testing engagements."
       />
 
-      <div className="mt-12 grid gap-8 lg:grid-cols-[1.4fr_0.8fr] items-stretch">
+      <div className="mt-12 grid items-stretch gap-6 sm:gap-8 lg:mt-16 lg:grid-cols-[1.4fr_0.8fr]">
 
         {/* LEFT FORM */}
-        <Reveal className="glass gradient-ring rounded-[2rem] p-8 h-full">
+        <Reveal className="glass gradient-ring h-full rounded-[2rem] p-6 sm:p-8">
           <form
             onSubmit={onSubmit}
             className="flex h-full flex-col"
@@ -109,7 +109,7 @@ export function Contact() {
               value="Jumana Portfolio"
             />
 
-            <div className="space-y-5 flex-1">
+            <div className="flex-1 space-y-7">
               {FIELDS.map((field) => (
                 <div key={field.name}>
                   <label
@@ -170,8 +170,7 @@ export function Contact() {
         </Reveal>
 
         {/* RIGHT CARD */}
-        <Reveal className="glass gradient-ring rounded-[2rem] p-15 flex flex-col justify-between h-full">
-
+        <Reveal className="glass gradient-ring flex h-full flex-col justify-between rounded-[2rem] p-7 sm:p-8">
           <div>
             <h3 className="text-2xl font-semibold">
               Contact Me
