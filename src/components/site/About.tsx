@@ -14,10 +14,10 @@ export function About() {
           </>
         }
       />
-
+  
       <div className="mt-12 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
         <Reveal className="glass gradient-ring rounded-3xl p-8">
-          <p className="text-base leading-relaxed sm:text-lg">
+          <p className="mt-10 text-base leading-relaxed sm:text-lg">
             I am a Software QA Engineer passionate about delivering high-quality software
             experiences. I specialize in Manual Testing, Automation Testing, Functional Testing,
             Regression Testing, Smoke Testing, UI Testing, Selenium WebDriver, Playwright, API
@@ -25,11 +25,11 @@ export function About() {
             release, improving software reliability, and collaborating closely with developers to
             ensure excellent user experiences.
           </p>
-          <div className="mt-8 flex flex-wrap gap-2">
+          <div className="mt-12 flex flex-wrap gap-2">
             {["Manual", "Automation", "API", "Agile", "Regression", "UI"].map((tag) => (
               <span
                 key={tag}
-                className="glass-soft rounded-full px-3 py-1.5 font-mono text-[0.7rem] tracking-wider uppercase"
+                 className="glass-soft rounded-full px-3 py-1.5 font-mono text-[0.7rem] tracking-wider uppercase"
               >
                 {tag}
               </span>

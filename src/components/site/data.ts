@@ -1,7 +1,7 @@
-import fedible from "@/assets/proj-fedible.jpg";
-import neocarz from "@/assets/proj-neocarz.jpg";
-import homebite from "@/assets/proj-homebite.jpg";
-import xchools from "@/assets/proj-xchools.jpg";
+import fedible from "@/assets/proj-fedible.png";
+import neocarz from "@/assets/proj-neocarz.png";
+import homebite from "@/assets/proj-homebite.png";
+import xchools from "@/assets/proj-xchools.png";
 
 export const NAV = [
   { label: "Home", href: "#home" },
@@ -23,21 +23,21 @@ export const ROLES = [
 export const STATS = [
   { label: "Experience", value: 1, suffix: "+ Years" },
   { label: "Live Projects", value: 4, suffix: "" },
-  { label: "Automation Projects", value: 2, suffix: "" },
+  { label: "Manual and Automation Projects", value: 10, suffix: "" },
   { label: "Bugs Reported", value: 500, suffix: "+" },
   { label: "Test Cases Executed", value: 1000, suffix: "+" },
   { label: "Automation Scripts", value: 100, suffix: "+" },
-  { label: "Modules Tested", value: 20, suffix: "+" },
+  { label: "Modules Tested", value: 60, suffix: "+" },
   { label: "Bug Detection Accuracy", value: 98, suffix: "%" },
 ];
 
 export const DASHBOARD = [
   { label: "Live Projects", value: 4, suffix: "+" },
-  { label: "Applications Tested", value: 6, suffix: "+" },
+  { label: "Applications Tested", value: 15, suffix: "+" },
   { label: "Test Cases", value: 1000, suffix: "+" },
   { label: "Bugs Reported", value: 500, suffix: "+" },
   { label: "Regression Cycles", value: 100, suffix: "+" },
-  { label: "Modules Tested", value: 20, suffix: "+" },
+  { label: "Modules Tested", value: 60, suffix: "+" },
 ];
 
 export const SKILL_GROUPS = [
@@ -86,7 +86,7 @@ export const SKILL_GROUPS = [
 export const EXPERIENCE = [
   {
     company: "Brands Trek Coders LLP",
-    role: "QA Tester",
+    role: "QA Engineer",
     period: "June 2026 – Present",
     current: true,
     points: [
@@ -119,7 +119,7 @@ export const EXPERIENCE = [
       "Playwright",
       "API Testing",
       "Postman",
-      "Agile",
+      "Agile Methodology",
     ],
   },
 ];
@@ -209,7 +209,7 @@ export const LIVE_PROJECTS = [
     name: "Xchools",
     url: "https://app.xchools.in/",
     domain: "School ERP",
-    platform: "Web Application",
+    platform: "Web Application + Mobile Application",
     role: "QA Tester",
     status: "Live",
     image: xchools,
@@ -217,6 +217,7 @@ export const LIVE_PROJECTS = [
       "A complete School Management System for administrators, teachers, students, and parents.",
     tech: ["Manual Testing", "Role Based Access", "Functional", "Regression", "UI Testing"],
     responsibilities: [
+      "Admin Module",
       "Student Module",
       "Teacher Module",
       "Attendance",
@@ -242,7 +243,7 @@ export const TRAINING_PROJECTS = [
   },
   {
     name: "Paragon WebResto",
-    tech: ["Manual Testing", "Playwright"],
+    tech: ["Manual Testing", "Playwright", "JavaScript"],
     description:
       "Restaurant management web application tested for ordering, billing, customer workflows, regression testing, and browser compatibility.",
   },
@@ -250,9 +251,9 @@ export const TRAINING_PROJECTS = [
 
 export const CONTACT = {
   email: "jumanafathimaep@gmail.com",
-  phone: "+91 98765 43210",
+  phone: "+91 8921743121",
   location: "Calicut, Kerala, India",
-  linkedin: "https://www.linkedin.com/",
-  github: "https://github.com/",
-  resume: "/Jumana-Fathima-EP-QA-Engineer.pdf",
+  linkedin: "https://www.linkedin.com/in/jumanafathimaep/",
+  github: "https://github.com/Jumanaep",
+  resume: "src/assets/Jumana Fathima Tester.pdf",
 };

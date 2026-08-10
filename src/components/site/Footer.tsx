@@ -12,11 +12,7 @@ export function Footer() {
           </span>
           <p className="text-muted-foreground text-sm">© 2026 Jumana Fathima EP</p>
         </div>
-        <p className="text-muted-foreground text-xs">
-          Crafted with ❤️ using Next.js &amp; React · Press{" "}
-          <kbd className="glass-soft rounded-md px-1.5 py-0.5 font-mono text-[0.65rem]">T</kbd> to
-          switch theme
-        </p>
+      
       </div>
     </footer>
   );

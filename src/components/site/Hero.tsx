@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { ArrowRight, Bug, Download, Gauge, Mail, ShieldCheck, TestTube2 } from "lucide-react";
-import profile from "@/assets/profile.jpg";
+import profile from "@/assets/profile.png";
 import { CONTACT, ROLES } from "./data";
 
 function RoleRotator() {
@@ -27,10 +27,10 @@ function RoleRotator() {
 }
 
 const FLOATERS = [
-  { Icon: Bug, className: "left-[6%] top-[22%]", delay: 0 },
-  { Icon: TestTube2, className: "right-[8%] top-[18%]", delay: 1.2 },
-  { Icon: ShieldCheck, className: "left-[12%] bottom-[16%]", delay: 0.6 },
-  { Icon: Gauge, className: "right-[14%] bottom-[22%]", delay: 1.8 },
+  { Icon: Bug, className: "left-[5%] top-[22%]", delay: 0 },
+  { Icon: TestTube2, className: "right-[9%] top-[18%]", delay: 1.2 },
+  { Icon: ShieldCheck, className: "left-[12%] bottom-[3%]", delay: 0.6 },
+  { Icon: Gauge, className: "right-[42%] bottom-[25%]", delay: 1.8 },
 ];
 
 export function Hero() {
@@ -126,12 +126,7 @@ export function Hero() {
             >
               Hire Me
             </a>
-            <a
-              href={`mailto:${CONTACT.email}`}
-              className="text-muted-foreground hover:text-foreground inline-flex items-center gap-2 rounded-full px-4 py-3 text-sm transition-colors"
-            >
-              <Mail className="h-4 w-4" /> Contact Me
-            </a>
+            
           </motion.div>
         </div>
 
@@ -153,14 +148,8 @@ export function Hero() {
               height={1100}
               className="aspect-[4/5] w-full rounded-[1.6rem] object-cover"
             />
-            <div className="glass-soft absolute bottom-6 left-6 rounded-2xl px-4 py-3">
-              <p className="font-mono text-[0.65rem] tracking-[0.2em] uppercase opacity-70">
-                Status
-              </p>
-              <p className="mt-1 flex items-center gap-2 text-sm font-medium">
-                <span className="bg-signal-3 h-1.5 w-1.5 rounded-full" /> All tests passing
-              </p>
-            </div>
+            
+            
           </motion.div>
         </motion.div>
       </div>

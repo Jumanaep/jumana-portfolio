@@ -75,7 +75,7 @@
   --background: oklch(0.985 0.004 250);
   --foreground: oklch(0.2 0.03 258);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.2 0.03 258);
+  --card-foreground: rgb(13, 22, 36);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.2 0.03 258);
   --primary: oklch(0.55 0.11 195);
@@ -254,7 +254,7 @@
   width: 100%;
   max-width: 78rem;
   padding-inline: 1.25rem;
-  padding-block: 6.5rem;
+  padding-block: 2rem;
 }
 
 @utility eyebrow {
