@@ -255,5 +255,5 @@ export const CONTACT = {
   location: "Calicut, Kerala, India",
   linkedin: "https://www.linkedin.com/in/jumanafathimaep/",
   github: "https://github.com/Jumanaep",
-  resume: "src/assets/Jumana Fathima Software Tester.pdf",
+  resume: "/Jumana Fathima Software Tester.pdf",
 };
